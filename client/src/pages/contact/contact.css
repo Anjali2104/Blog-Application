@@ -1,0 +1,56 @@
+/* components/Contact.css */
+
+/* Contact form container */
+.contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact form heading */
+  .contact-heading {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+  /* Form input fields */
+  .contact-form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+  .contact-form-input,
+  .contact-form-textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form-textarea {
+    resize: vertical;
+  }
+  
+  /* Submit button */
+  .contact-form-button {
+    background-color: teal;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form-button:hover {
+    background-color:#66c4c4;
+  }
+  

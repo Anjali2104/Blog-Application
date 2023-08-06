@@ -33,6 +33,7 @@ export default function Login() {
           className="loginInput"
           placeholder="Enter your username..."
           ref={userRef}
+          required
         />
         <label>Password</label>
         <input
@@ -40,6 +41,7 @@ export default function Login() {
           className="loginInput"
           placeholder="Enter your password..."
           ref={passwordRef}
+          required
         />
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login
