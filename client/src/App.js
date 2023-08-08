@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Contact from "./pages/contact/contact";
+import About from "./pages/about/about";
 function App() {
   const { user } = useContext(Context);
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/write">{user ? <Write /> : <Register />}</Route>
         <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
         <Route path='/contact'>{user ? <Contact /> : <Contact />}</Route>
+        <Route path='/about'> {<About/>}  </Route>
         <Route path="/post/:postId">
           <Single />
         </Route>

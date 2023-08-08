@@ -33,24 +33,26 @@ export default function Contact() {
 };
 
   return (
-    <div className='contact-container'>
-      <h2 className='contact-heading'>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label className='contact-form-label'>Name:</label>
-          <input className='contact-form-input' type="text"  value={name} onChange={(e) => setName(e.target.value)} />
-        </div>
-        <div>
-          <label className='contact-form-label'>Email:</label>
-          <input className='contact-form-input' type="email"   value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div>
-          <label className='contact-form-label'>Message:</label>
-          <textarea  className='contact-form-textarea' value={message} onChange={(e) => setMessage(e.target.value)} />
-        </div>
-        <button  className='contact-form-button' type="submit">Send</button>
-      </form>
-    </div>
+   <div className="conatct">
+       <div className='contact-container'>
+          <h2 className='contact-heading'>Contact Us</h2>
+          <form onSubmit={handleSubmit}>
+          <div>
+            <label className='contact-form-label'>Name:</label>
+            <input className='contact-form-input' type="text"  value={name} onChange={(e) => setName(e.target.value)} />
+          </div>
+          <div>
+            <label className='contact-form-label'>Email:</label>
+            <input className='contact-form-input' type="email"   value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div>
+         <div>
+            <label className='contact-form-label'>Message:</label>
+            <textarea  className='contact-form-textarea' value={message} onChange={(e) => setMessage(e.target.value)} />
+         </div>
+            <button  className='contact-form-button' type="submit">Send</button>
+         </form>
+      </div>
+   </div>
   );
 };
 

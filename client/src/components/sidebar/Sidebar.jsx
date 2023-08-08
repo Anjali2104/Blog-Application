@@ -23,8 +23,7 @@ export default function Sidebar() {
           alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+        I'm a passionate and experienced full-stack developer with a strong background in both front-end and back-end technologies. I thrive on crafting intuitive user experiences through clean and efficient code, while also ensuring robust server-side functionality.
         </p>
       </div>
       <div className="sidebarItem">
@@ -40,10 +39,11 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>
         <div className="sidebarSocial">
-          <i className="sidebarIcon fab fa-facebook-square"></i>
-          <i className="sidebarIcon fab fa-twitter-square"></i>
-          <i className="sidebarIcon fab fa-pinterest-square"></i>
-          <i className="sidebarIcon fab fa-instagram-square"></i>
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="sidebarIcon fab fa-facebook-square"> </i> </a> 
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="sidebarIcon fab fa-twitter-square"></i></a>
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="sidebarIcon fab fa-pinterest-square"></i> </a> 
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" > <i className="sidebarIcon fab fa-instagram-square"></i> </a> 
+         
         </div>
       </div>
     </div>

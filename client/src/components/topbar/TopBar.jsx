@@ -13,10 +13,14 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
+        {/* <i className="topIcon fab fa-facebook-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i> */}
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="topIcon fab fa-facebook-square"> </i> </a> 
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="topIcon fab fa-twitter-square"></i></a>
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" ><i className="topIcon fab fa-pinterest-square"></i> </a> 
+         <a href="https://www.linkedin.com/in/anjali-upadhyay-7547bb1ab/" target="_blank"  rel="noreferrer" > <i className="topIcon fab fa-instagram-square"></i> </a> 
       </div>
       <div className="topCenter">
         <ul className="topList">
@@ -26,7 +30,7 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="/about">
               ABOUT
             </Link>
           </li>
