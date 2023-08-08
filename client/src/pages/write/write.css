@@ -61,3 +61,45 @@
   cursor: pointer;
   font-size: 16px;
 }
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* Responsive media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .write {
+    padding: 1rem;
+  }
+
+.writeImg {
+  margin-left: 50px;
+  width: 50vw;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+  .writeForm {
+    position: relative;
+    top:20px;
+  }
+
+  
+.writeFormGroup {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+  .writeInput,
+  .writeText {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  
+  }
+
+  .writeSubmit {
+     top:200px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

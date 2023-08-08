@@ -45,12 +45,14 @@ export default function Write() {
             type="file"
             id="fileInput"
             style={{ display: "none" }}
+            required
             onChange={(e) => setFile(e.target.files[0])}
           />
           <input
             type="text"
             placeholder="Title"
             className="writeInput"
+            required
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />
@@ -59,6 +61,7 @@ export default function Write() {
           <textarea
             placeholder="Tell your story..."
             type="text"
+            required
             className="writeInput writeText"
             onChange={e=>setDesc(e.target.value)}
           ></textarea>

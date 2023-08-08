@@ -1,117 +1,12 @@
-/* .aboutContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width:70vw;
-    margin: auto;
-   
-  }
-  
-  .aboutContent {
-    background-color: #dcd7d7;
-    padding: 40px;
-    
-    margin: auto;
-    border-radius: 10%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
 
-  h1{
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #444;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  p {
-    
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #666;
-    font-family: "Varela Round", sans-serif;
-   
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #444;
-    font-family: "Varela Round", sans-serif;
-  }
-  .contactUs{
-    text-align: center;
-  }
-  .contactDiv{
-    margin-top: 30px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-   }
-  .contactDesc{
-    width: 30vw;
-  }
-  .contactDetails{
-    display: flex;
-    flex-direction: column;
-    font-family: "Varela Round", sans-serif;
-   
-  }
- 
-  
-  .contactList {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-   
-  }
-  .contactList li {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: #444;
-  }
-  
-  .socialLinks {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-    color: #444;
-  }
-  
-  .socialLinks a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    font-family: "Varela Round", sans-serif;
-  }
-  .socialLinks a:hover {
-    color: #0056b3;
-  }
-  
-  .backBtn {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    color: #007bff;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .backBtn:hover {
-    color: #0056b3;
-  }
-   */
    .aboutContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width:70vw;
+    flex-basis: 100%;
+    height: 50vh;
+    width:75vw;
+    top:20px;
     margin: auto;
    }
    .aboutContent {
@@ -137,6 +32,7 @@
     text-align: justify;
   }
   h2 {
+    text-align: center;
     font-size: 1.3rem;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -229,4 +125,62 @@
     background-color: #555;
     color: #fff;
   }
+  /* ------------------------------------------------------------------------------------------------------ */
+  /* Responsive media query for smaller screens */
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
   
+  .aboutContent{
+    top:10px;
+    width: 100%;
+    border-radius: 0%;
+    margin-left: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .aboutDesc{
+    font-size: 1.0rem;
+    line-height: 1.1;
+    color: #666;
+    width: 70vw;
+    text-align:justify;
+    
+  }
+  .missionPara{
+    /* margin-left: -15px; */
+    text-align: justify;
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: #666;
+    width: 70vw;
+  }
+  .contactDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .contactDivLeft{
+    font-size: 1.0rem;
+    line-height: 1.1;
+    text-align:justify;
+  }
+  .contactList > li{
+    padding: auto;
+    margin-left: -80px;
+    margin-bottom: 20px;
+  }
+  .socialLinks{
+   
+    margin: auto;
+    
+  }
+  .socialLinks:hover{
+    color: #666;
+  }
+  .btn{
+    
+    margin: auto;
+    margin-top: 30px;
+  }
+}
