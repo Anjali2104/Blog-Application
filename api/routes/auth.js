@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
+const sendToken = require("../utils/jwtToken");
 
 //REGISTER
 router.post("/register", async (req, res) => {
@@ -12,9 +13,9 @@ router.post("/register", async (req, res) => {
       email: req.body.email,
       password: hashedPass,
     });
-
+    
     const user = await newUser.save();
-    res.status(200).json(user);
+    sendToken(user,201,res);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -28,9 +29,7 @@ router.post("/login", async (req, res) => {
 
     const validated = await bcrypt.compare(req.body.password, user.password);
     !validated && res.status(400).json("Wrong credentials!");
-
-    const { password, ...others } = user._doc;
-    res.status(200).json(others);
+    sendToken(user,200,res);
   } catch (err) {
     res.status(500).json(err);
   }
