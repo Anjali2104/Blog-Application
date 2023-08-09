@@ -23,7 +23,7 @@ The Blogsmiths is more than just a blog; it's a space for personal growth, learn
           
           <div className='contactDivRight'>
              <ul className="contactList">
-            <li> <i class="fa-solid fa-envelope"></i> : anjaliu949@gmail.com</li> 
+                <li> <i class="fa-solid fa-envelope"></i> : anjaliu949@gmail.com</li> 
                  <li> <i class="fa-solid fa-phone"></i>: (+91) 6392081801 </li>
              </ul>
              <div className="socialLinks">

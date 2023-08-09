@@ -59,10 +59,11 @@
   }
   /* ------------------------------------------------------------------------------------------------ */
   /* Responsive media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .contact-container {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 75%;
+    margin:  auto;
+    margin-top: 30px;
   }
 
   .contact-form-label {

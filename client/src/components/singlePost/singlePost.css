@@ -97,3 +97,40 @@
   align-self: flex-end;
   margin-top: 20px;
 }
+/* ---------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+ 
+.singlePostWrapper {
+  width: 90%;
+  height: 70%;
+  padding: 10px;
+ 
+}
+.singlePostTitle{
+  font-size: 22px;
+}
+
+.singlePostTitleInput{
+  font-size: 20px;
+}
+.singlePostEdit{
+  font-size: 12px;
+ 
+}
+
+.singlePostIcon {
+  margin-left: px;
+  cursor: pointer;
+}
+
+.singlePostInfo{
+  font-size: 14px;
+}
+.singlePostDesc {
+  color: #666;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: justify;
+}
+
+}

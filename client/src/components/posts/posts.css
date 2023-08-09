@@ -4,3 +4,14 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+/* ............................. */
+@media screen and (max-width: 600px){
+    .posts{
+        flex:5;
+        display: flex;
+        flex-wrap: wrap;
+      
+        height: 50%;
+    
+    }
+}

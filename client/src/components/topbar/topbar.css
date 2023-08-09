@@ -58,48 +58,41 @@
   cursor: pointer;
   margin-left: 15px;
 }
+.menuIcon{
+  display: none;
+}
 /* ------------------------------------------------------------------------------------------------------------------------ */
-/* Assuming your breakpoint for phone screens is around 480px */
+
 /* ... Your existing CSS code ... */
 
 /* Media query for small screens */
-@media screen and (max-width: 768px) {
-  .topCenter {
+@media screen and (max-width: 600px){
+  .topLeft{
     display: none;
   }
-
-  .topRight {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
+   .topCenter{
+   flex:2
+   }
+   .topRight{
+    flex: 2;
+   }
+   .topListItem{
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+   }
+   .link{
+    gap:0px;
+   }
+   .topSearchIcon{
+    font-size: 14px;
+   }
+   .topImg{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
     cursor: pointer;
-    margin-right: 15px;
-  }
-
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .menu-open .topList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: white;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .menu-open .topListItem {
-    margin: 15px 0;
-  }
+   }
 }
