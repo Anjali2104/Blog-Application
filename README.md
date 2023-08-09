@@ -136,4 +136,9 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Acknowledgments
 
-Special thanks to the project owner [Anjali2104](https://github.com/Anjali2104) for developing this application and making it open-source.
+Express.js - Backend web framework for Node.js
+React - JavaScript library for building user interfaces
+Node.js - JavaScript runtime
+MongoDB - NoSQL database
+
+Happy blogging with MERN!
