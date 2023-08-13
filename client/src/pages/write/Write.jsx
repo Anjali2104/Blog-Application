@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./write.css";
-import axios from "axios";
+import {axiosInstance } from "../../config";
 import { Context } from "../../context/Context";
 
 export default function Write() {
@@ -23,12 +23,12 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("https://blog-application-dkj8.onrender.com/upload", data);
+        await axiosInstance.post("/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post("https://blog-application-dkj8.onrender.com/posts", newPost);
-      window.location.replace("https://blog-application-dkj8.onrender.com/post/" + res.data._id);
+      const res = await axiosInstance.post("/posts", newPost);
+      window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };
   return (

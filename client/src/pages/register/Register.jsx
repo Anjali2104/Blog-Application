@@ -1,4 +1,4 @@
-import axios from "axios";
+import { axiosInstance } from "../../config";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./register.css";
@@ -13,12 +13,12 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("https://blog-application-dkj8.onrender.com/auth/register", {
+      const res = await axiosInstance.post("/auth/register", {
         username,
         email,
         password,
       });
-      res.data && window.location.replace("https://blog-application-dkj8.onrender.com/login");
+      res.data && window.location.replace("/login");
     } catch (err) {
       setError(true);
     }
