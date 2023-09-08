@@ -20,7 +20,7 @@ This is a Blog Application that allows users to create, read, update, and delete
 
 ## Demo
 
-You can see a live demo of the application at [Blog Application Demo](https://blog-application-demo.netlify.app/).
+You can see a live demo of the application at [Blog Application Demo](https://blogappfronted.onrender.com/).
 
 ## Features
 
